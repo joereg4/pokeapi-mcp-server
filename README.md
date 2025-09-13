@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/joereg4-pokeapi-mcp-server-badge.png)](https://mseep.ai/app/joereg4-pokeapi-mcp-server)
+
 # PokeAPI MCP Server
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
