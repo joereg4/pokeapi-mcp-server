@@ -39,7 +39,7 @@ A Model Context Protocol (MCP) server that provides comprehensive access to Pok√
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/pokeapi-mcp-server.git
+git clone https://github.com/joereg4/pokeapi-mcp-server.git
 cd pokeapi-mcp-server
 ```
 
