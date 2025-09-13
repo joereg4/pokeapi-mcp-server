@@ -1,0 +1,55 @@
+name: Test PokeAPI MCP Server
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Test MCP server
+      run: |
+        python -c "
+        import asyncio
+        import sys
+        sys.path.append('.')
+        from pokeapi_server import get_pokemon
+        result = asyncio.run(get_pokemon('pikachu'))
+        print('✅ MCP server test passed')
+        print('Sample output:', result[:100] + '...')
+        "
+    
+    - name: Test MCP protocol
+      run: |
+        echo '{"jsonrpc":"2.0","method":"tools/list","id":1}' | python pokeapi_server.py | head -20
+    
+    - name: Build Docker image
+      run: |
+        docker build -t pokeapi-mcp-server .
+    
+    - name: Test Docker image
+      run: |
+        docker run --rm pokeapi-mcp-server python -c "
+        import asyncio
+        import sys
+        sys.path.append('.')
+        from pokeapi_server import get_pokemon
+        result = asyncio.run(get_pokemon('pikachu'))
+        print('✅ Docker test passed')
+        "
