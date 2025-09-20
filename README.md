@@ -3,6 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
 [![MCP](https://img.shields.io/badge/MCP-Compatible-green.svg)](https://modelcontextprotocol.io/)
+[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/9b3b2fab-52ee-431d-b263-74a438783b08)
 
 A Model Context Protocol (MCP) server that provides comprehensive access to Pokémon data from the [PokeAPI](https://pokeapi.co/). Perfect for AI assistants, chatbots, and applications that need rich Pokémon information.
 
@@ -308,5 +309,3 @@ If you encounter any issues or have questions:
 ---
 
 **Made with ❤️ for the Pokémon and AI communities**
-
-[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/9b3b2fab-52ee-431d-b263-74a438783b08)
