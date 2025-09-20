@@ -1,5 +1,3 @@
-[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/joereg4-pokeapi-mcp-server-badge.png)](https://mseep.ai/app/joereg4-pokeapi-mcp-server)
-
 # PokeAPI MCP Server
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -310,3 +308,5 @@ If you encounter any issues or have questions:
 ---
 
 **Made with ❤️ for the Pokémon and AI communities**
+
+[![Verified on MseeP](https://mseep.ai/badge.svg)](https://mseep.ai/app/9b3b2fab-52ee-431d-b263-74a438783b08)
