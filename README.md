@@ -44,9 +44,9 @@ git clone https://github.com/joereg4/pokeapi-mcp-server.git
 cd pokeapi-mcp-server
 ```
 
-### 2. Build the Docker Image
+### 2. Pull the Docker Image
 ```bash
-docker build -t pokeapi-mcp-server .
+docker pull joereg4/pokeapi-mcp-server:latest
 ```
 
 ### 3. Set Up MCP Configuration
